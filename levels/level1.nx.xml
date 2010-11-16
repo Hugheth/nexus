@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexus>
+	<level name="Level 01">
+		<circuits flags="connect">
+			<wire x="2" y="3" l="20"/>
+			<wire x="22" y="3" l="20"/>
+			<text x="2" y="5">
+╔════════════════════════╗
+║ Nexus Version 1.0 BETA ║
+╚════════════════════════╝
+			</text>
+		</circuits>
+	</level>
+</nexus>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Nexus Version 1.0.0</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="lib/style.css"/>
+		<!-- Core Libraries -->
+		<script thpe="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/core/core.js"></script>
+		<script type="text/javascript" src="lib/core/loop.js"></script>
+		<script type="text/javascript" src="lib/core/net.js"></script>
+		<script type="text/javascript" src="lib/core/sound.js"></script>
+		<script type="text/javascript" src="lib/core/utils.js"></script>
+		<!-- Edit Libraries -->
+		<script type="text/javascript" src="lib/edit/edit.js"></script>
+		<!-- Circuit components -->
+		<script type="text/javascript" src="lib/circuits/text.js"></script>
+		<script type="text/javascript" src="lib/circuits/wire.js"></script>
+		<script type="text/javascript" src="lib/circuits/bus.js"></script>
+		<script type="text/javascript" src="lib/circuits/chip.js"></script>
+		<!-- Chips -->
+		<script type="text/javascript" src="lib/chips/make.js"></script>
+		<script type="text/javascript" src="lib/chips/home.js"></script>
+	</head>
+	<body>				<audio class="sound_clikput_generate" src="sound/clikput_generate.wav"></audio>
+		<div class="nexus_game">
+			<div class="board"></div>
+			<div class="scrollh">
+				<div class="bar"></div>
+			</div>
+			<div class="scrollv">
+				<div class="bar"></div>
+			</div>
+			<audio class="sound_clikput_generate" src="sound/clikput_generate.wav"></audio>
+			<audio class="sound_clikput_block" src="sound/clikput_block.wav"></audio>
+			<audio class="sound_clikput_click" src="sound/clikput_click.wav"></audio>
+			<audio class="sound_clikput_accept" src="sound/clikput_accept.wav"></audio>
+		</div>
+		<div class="nexus_levels">
+			<div class="menu">
+				<level name="Level 01">
+					<circuits>
+						<wire x="11" y="4" l="100">
+							<bit p="21" player="1">⚙</bit>
+						</wire>
+						<wire x="16" y="6" l="40">
+							<bit p="0" player="0">▼</bit>
+							<bit p="16" player="1">⚙</bit>
+							<bit p="32" player="0">◀</bit
+						</wire>
+						<wire x="20" y="8" l="40">
+							<bit p="0" player="0">▶</bit>
+							<bit p="16" player="0">⚙</bit>
+							<bit p="24" player="1">▲</bit>
+							<bit p="32" player="0">⚙</bit>
+						</wire>
+						<bus x="16" y="7" h="8"></bus>
+						<bus x="20" y="9" h="6"></bus>
+						<wire x="16" y="15" l="10">
+							<bit p="0" player="0">▶</bit>
+							<bit p="4" player="1">▲</bit>
+						</wire>
+						<chip player="0" type="make" x="0" y="3" num="1000" rate="5" chance="10" seed="1" speed="2"></chip>
+						<chip player="1" type="home" x="26" y="13" num="120"></chip>
+						<text x="16" y="1" w="66" tint="#a09"> Power packets are marked with <span style="color: black; background: #a09">⚡</span> route them to HOME to gain power </text>
+					</circuits>
+					<actions>
+
+					</actions>
+				</level>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,187 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+.nexus_game {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: "DejaVu Sans Mono", "nexusMono";
+	color: #777;
+	cursor: default;
+	overflow: hidden;
+}
+@font-face {  
+  font-family: "nexusMono";  
+  src: url(DejaVuSansMono.ttf) format("truetype");  
+}  
+
+.nexus_levels {
+	display: none;
+}
+.scrollh {
+	position: absolute;
+	background: black;
+	width: 4px;
+	height: 100%;
+	padding: 4px;
+	right: 0;
+}
+.scrollh .bar {
+	width: 100%;
+	height: 80%;
+	background: #333;
+}
+.scrollv {
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 4px;
+	padding: 4px;
+	bottom: 0;
+}
+.scrollv .bar {
+	width: 80%;
+	height: 100%;
+	background: #333;
+}
+.editor {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	padding: 5px;
+	color: #333;
+	background: #FFF;
+}
+.editor .opt {
+	padding: 2px;
+}
+.editor .opt:hover {
+	color: white;
+	background: #333;
+	cursor: pointer;
+}
+.editor .opt.active {
+	color: white;
+	background: #a09;
+}
+.editor .opt.active:hover {
+	color: black;
+	background: #f2b;
+}
+.editor .opt.clk {
+	background: #ba2;
+}
+.edit_drag {
+	position: absolute;
+	border: 2px solid #00a;
+	width: 10px;
+	height: 19px;
+	background: #008;
+	opacity: 0.8;
+}
+.board {
+	position: relative;
+}
+.board div {
+	position: absolute;
+	color: white;
+	line-height: 19px;
+}
+.board .wire {
+	color: #333;
+}
+.board .bus {
+	color: #333;
+}
+.c:hover {
+	color: black;
+	background: #39c;
+}
+.board .w {
+	color: white;
+}
+.board .y {
+	color: #ba2;
+	text-shadow: #ffa 0px 0px 4px;
+}
+.board .tint_0 {
+	color: #5be;
+}
+.tint_0.l4 {
+	color: #5ad;
+}
+.tint_0.l3 {
+	color: #49c;
+}
+.tint_0.l2 {
+	color: #38b;
+}
+.tint_0.l1 {
+	color: #27a;
+}
+.tint_0.l0 {
+	color: #169;
+}
+.board .tint_1 {
+	color: #090;
+}
+.tint_1.l4 {
+	color: #080;
+}
+.tint_1.l3 {
+	color: #070;
+}
+.tint_1.l2 {
+	color: #060;
+}
+.tint_1.l1 {
+	color: #050;
+}
+.tint_1.l0 {
+	color: #040;
+}
+.board .tint_2 {
+	color: #900;
+}
+.tint_2.l4 {
+	color: #800;
+}
+.tint_2.l3 {
+	color: #700;
+}
+.tint_2.l2 {
+	color: #600;
+}
+.tint_2.l1 {
+	color: #500;
+}
+.tint_2.l0 {
+	color: #400;
+}
+.board .clikput {
+	color: #ba2;
+	cursor: pointer;
+}
+.board .clikput.wait {
+	color: black;
+	background: #b20;
+}
+.board .clikput:hover {
+	color: black;
+	background: #ba2;
+}
+.board .clikput.wait:hover {
+	color: black;
+	background: #760;
+}
+.board .clikput.clk {
+	color: black;
+	background: #b20;
+}
