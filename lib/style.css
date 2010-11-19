@@ -59,32 +59,50 @@ body {
 	color: #333;
 	background: #FFF;
 }
-.editor .opt {
+.opt {
 	padding: 2px;
 }
-.editor .opt:hover {
+.opt:hover {
 	color: white;
 	background: #333;
-	cursor: pointer;
 }
-.editor .opt.active {
+.opt.active {
 	color: white;
 	background: #a09;
 }
-.editor .opt.active:hover {
+.opt.active:hover {
 	color: black;
 	background: #f2b;
 }
-.editor .opt.clk {
+.opt.clk {
 	background: #ba2;
 }
 .edit_drag {
-	position: absolute;
-	border: 2px solid #00a;
+	border: 2px solid #aaa;
 	width: 8px;
 	height: 17px;
+	background: #888;
+	opacity: 0.5;
+}
+.edit_drag.drag {
+	border: 2px solid #00a;
 	background: #008;
-	opacity: 0.8;
+}
+.chipbox {
+	position: absolute;
+	color: #333;
+	background: white;
+	padding: 5px;
+}
+.ui_form {
+	text-align: right;
+	padding: 5px;
+}
+.ui_input {
+	padding: 5px;
+}
+.ui_input input {
+	margin-left: 10px;
 }
 .board {
 	position: relative;
