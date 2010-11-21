@@ -17,7 +17,6 @@
 		<!-- Circuit components -->
 		<script type="text/javascript" src="lib/circuits/text.js"></script>
 		<script type="text/javascript" src="lib/circuits/wire.js"></script>
-		<script type="text/javascript" src="lib/circuits/bus.js"></script>
 		<script type="text/javascript" src="lib/circuits/chip.js"></script>
 		<!-- Chips -->
 		<script type="text/javascript" src="lib/chips/make.js"></script>
@@ -42,32 +41,32 @@
 			<div class="menu">
 				<level name="Level 01">
 					<circuits>
-						<wire x="11" y="4" l="100">
-							<bit p="21" player="1">⚙</bit>
-							<bit p="70" player="0">◀</bit>
-							<bit p="55" player="0">▼</bit>
-							<bit p="40" player="0">▶</bit>							
+						<wire x="11" y="4" w="100">
+							<bit p="21" player="1">⚙</wire>
+							<bit p="70" player="0">◀</wire>
+							<bit p="55" player="0">▼</wire>
+							<bit p="40" player="0">▶</wire>							
 						</wire>
-						<wire x="16" y="6" l="40">
-							<bit p="0" player="0">▼</bit>
-							<bit p="16" player="1">⚙</bit>
-							<bit p="32" player="0">◀</bit>
+						<wire x="16" y="6" w="40">
+							<bit p="0" player="0">▼</wire>
+							<bit p="16" player="1">⚙</wire>
+							<bit p="32" player="0">◀</wire>
 						</wire>
-						<wire x="20" y="8" l="40">
-							<bit p="0" player="0">▶</bit>
-							<bit p="16" player="0">⚙</bit>
-							<bit p="24" player="1">▲</bit>
-							<bit p="32" player="0">⚙</bit>
+						<wire x="20" y="8" w="40">
+							<bit p="0" player="0">▶</wire>
+							<bit p="16" player="0">⚙</wire>
+							<bit p="24" player="1">▲</wire>
+							<bit p="32" player="0">⚙</wire>
 						</wire>
-						<bus x="16" y="7" h="8"></bus>
-						<bus x="20" y="9" h="6"></bus>
-						<wire x="16" y="15" l="10">
-							<bit p="0" player="0">▶</bit>
-							<bit p="4" player="1">▲</bit>
+						<wire x="16" y="7" h="8"></wire>
+						<wire x="20" y="9" h="6"></wire>
+						<wire x="16" y="15" w="10">
+							<bit p="0" player="0">▶</wire>
+							<bit p="4" player="1">▲</wire>
 						</wire>
-						<bus x="66" y="5" h="8"></bus>
-						<wire x="55" y="13" l="40"></wire>
-						<chip player="0" type="make" x="0" y="3" num="1000" rate="5" chance="10" seed="1" speed="2"></chip>
+						<wire x="66" y="5" h="8"></wire>
+						<wire x="55" y="13" w="40"></wire>
+						<chip player="0" type="make" x="0" y="3" num="100" rate="1" chance="60" seed="1" speed="2"></chip>
 						<chip player="1" type="home" x="26" y="13" num="120"></chip>
 						<text x="16" y="1" w="66" tint="#a09"> Power packets are marked with <span style="color: black; background: #a09">⚡</span> route them to HOME to gain power </text>
 					</circuits>
