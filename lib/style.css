@@ -87,15 +87,16 @@ body {
 	border: 2px solid #00a;
 	background: #008;
 }
-.chipbox {
+.ui_form {
+	text-align: right;
+	padding: 5px;
+}
+.ui_menu {
 	position: absolute;
 	color: #333;
 	background: white;
 	padding: 5px;
-}
-.ui_form {
-	text-align: right;
-	padding: 5px;
+	border: 3px double black;
 }
 .ui_input {
 	padding: 5px;
